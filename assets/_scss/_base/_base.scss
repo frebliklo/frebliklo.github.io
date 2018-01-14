@@ -7,7 +7,6 @@
 html {
   // rem definition, so should stay in base as we use this for both spacing and typography
   font-size: 62.5%;
-  background-color: rgba($color-primary,.5);
 
   @include respond(tab-land) {
     font-size: 56.25%;
