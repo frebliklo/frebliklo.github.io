@@ -1,0 +1,55 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+
+  @include respond(tab-port) {
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 9.6rem;
+  }
+
+  @include respond(phone) {
+    padding-top: 2.4rem;
+  }
+
+  &__content {
+    max-width: 30%;
+
+    @include respond(tab-land) {
+      max-width: 40%;
+    }
+
+    @include respond(tab-port) {
+      max-width: 75%;
+    }
+
+    @include respond(phone) {
+      max-width: 90%;
+    }
+
+  }
+
+  &__heading {
+    
+  }
+
+  &__body {
+    
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 15vh;
+  background-image: 
+    linear-gradient(
+      to bottom,
+      rgba($color-primary,.0) 0%,
+      rgba($color-primary,.1) 45%,
+      rgba($color-primary-dark,.1) 80%,
+      rgba($color-primary-dark,.2) 100%,
+    );
+
+  &__contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+
+    @include respond(tab-land) {
+      width: 40%;
+    }
+
+    @include respond(tab-port) {
+      width: 75%;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+    }
+  }
+
+}
