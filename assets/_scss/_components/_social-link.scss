@@ -12,6 +12,10 @@
     color: #9a2970;
   }
 
+  &--dribbble {
+    color: #DA5988;
+  }
+
   & .social-svg {
     width: 4.8rem;
     height: 4.8rem;
@@ -57,7 +61,7 @@
 
       &__outline {
         stroke: currentColor;
-        transform: scale(1.12);
+        transform: scale(1.1);
         transition: all .45s;
       }
 
