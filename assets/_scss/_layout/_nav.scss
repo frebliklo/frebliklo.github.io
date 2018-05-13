@@ -1,0 +1,72 @@
+.nav {
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 0;
+  width: 100%;
+  transition: background-color 240ms ease-in-out, box-shadow 240ms ease-in-out;
+
+  &__hero {
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+
+  &__link {
+
+    &, &:link, &:visited {
+      font-size: inherit;
+      padding: .4rem 1.2rem;
+      border-radius: 2px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: color 160ms ease-in, background-color 160ms ease-in;
+    }
+
+    &:hover, &:active, &:focus {
+      color: $color-white;
+      background-color: $color-blue;
+      transition: color 200ms ease-out, background-color 200ms ease-out;
+    }
+
+    &--active {
+      color: $color-white;
+      background-color: $color-blue-dark-1 !important;
+      transition: color 160ms ease-in-out, background-color 160ms ease-in-out;
+    }
+
+  }
+
+  &__list {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    &--item {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+
+      &:not(:first-child) {
+        margin-left: 2.4rem;
+      }
+
+    }
+
+  }
+
+}
+
+.scrolled {
+  background-color: rgba($color-bg,.98);
+  box-shadow: 0 3px 10px rgba($color-black,.1);
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+}

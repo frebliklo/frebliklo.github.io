@@ -1,0 +1,9 @@
+<nav class="nav">
+  <div class="row">
+    <a href="{{ site.baseurl }}/" class="nav__hero nav__link {% if page.page_class contains "index" %} hidden{% endif %}">frebliklo</a>
+    <ul class="nav__list">
+      <li class="nav__list--item"><a href="{{ site.baseurl }}/work" class="nav__link {% if page.page_class contains "work" %} nav__link--active{% endif %}">Work</a></li>
+      <li class="nav__list--item"><a href="{{ site.baseurl }}/about" class="nav__link {% if page.page_class contains "about" %} nav__link--active{% endif %}">About</a></li>
+    </ul>
+  </div>
+</nav>
