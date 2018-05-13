@@ -1,66 +1,67 @@
 body {
-  font-family: 'Karla', Helvetica, sans-serif;
+  font-family: 'Encode Sans', Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.5;
-  color: $color-black;
+  color: $color-fg;
+  background: $color-bg;
 }
 
-.heading-primary {
+// .heading-primary {
 
-  &__main {
-    display: block;
-    font-size: 4.8rem;
-    // font-size: 3.6vw;
-    // animation: move-in-left .75s ease-in-out;
+//   &__main {
+//     display: block;
+//     font-size: 4.8rem;
+//     // font-size: 3.6vw;
+//     // animation: move-in-left .75s ease-in-out;
 
-    @include respond(tab-land) {
-      font-size: 4.8rem;
-      // font-size: 4.2vw;
-    }
+//     @include respond(tab-land) {
+//       font-size: 4.8rem;
+//       // font-size: 4.2vw;
+//     }
 
-    @include respond(tab-port) {
-      font-size: 3.2rem;
-    }
+//     @include respond(tab-port) {
+//       font-size: 3.2rem;
+//     }
 
-  }
+//   }
 
-  &__sub {
-    display: block;
-    font-size: 3.2rem;
-    // font-size: 2.6vw;
-    // opacity: 0;
-    // animation: move-in-left .5s ease-in-out .75s forwards;
+//   &__sub {
+//     display: block;
+//     font-size: 3.2rem;
+//     // font-size: 2.6vw;
+//     // opacity: 0;
+//     // animation: move-in-left .5s ease-in-out .75s forwards;
 
-    @include respond(tab-land) {
-      font-size: 3.2rem;
-      // font-size: 2.8vw;
-    }
+//     @include respond(tab-land) {
+//       font-size: 3.2rem;
+//       // font-size: 2.8vw;
+//     }
 
-    @include respond(tab-port) {
-      font-size: 2.4rem;
-    }
+//     @include respond(tab-port) {
+//       font-size: 2.4rem;
+//     }
 
-  }
+//   }
 
-}
+// }
 
-.heading-secondary {
-  display: block;
-  font-size: 3.2rem;
-}
+// .heading-secondary {
+//   display: block;
+//   font-size: 3.2rem;
+// }
 
-.paragraph {
-  font-size: 1.6rem;
+// .paragraph {
+//   font-size: 1.6rem;
 
-  // -moz-hyphens: auto;
-  // -ms-hyphens: auto;
-  // -webkit-hyphens: auto;
-  // hyphens: auto;
-}
+//   // -moz-hyphens: auto;
+//   // -ms-hyphens: auto;
+//   // -webkit-hyphens: auto;
+//   // hyphens: auto;
+// }
 
-.contact-info {
-  display: block;
-  font-size: 1.4rem;
-  color: rgba($color-black,.6);
-}
+// .contact-info {
+//   display: block;
+//   font-size: 1.4rem;
+//   color: rgba($color-black,.6);
+// }
