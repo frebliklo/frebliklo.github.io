@@ -2,27 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  min-height: 10vh;
+  text-align: center;
+  width: 100%;
+  padding: 6.4rem;
+  color: rgba($color-bg,.75);
+  background: linear-gradient(to bottom, $color-blue-dark-1, $color-blue-dark-2);
 
-  &__contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 9.6rem;
-    width: 30%;
-
-    @include respond(tab-land) {
-      width: 40%;
-    }
-
-    @include respond(tab-port) {
-      width: 75%;
-    }
-
-    @include respond(phone) {
-      width: 90%;
-    }
+  p {
+    font-size: 1.4rem;
   }
 
 }
