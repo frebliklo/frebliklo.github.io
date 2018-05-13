@@ -1,6 +1,7 @@
 .case-teasers {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
 
   &__heading {
     font-size: 2rem;

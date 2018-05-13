@@ -1,0 +1,131 @@
+.work-cc {
+  overflow: hidden;
+
+  &__product-images {
+    position: relative;
+    width: 100%;
+    min-height: 375px;
+
+    &--browser {
+      z-index: 5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: auto;
+      right: auto;
+
+      & figure {
+        @extend %browser-device;
+        width:518px;
+        height: 376px;
+
+        & img {
+          @extend %browser-img-placement;
+          width: 512.5px;
+          height: 364.5px;
+        }
+      }
+    }
+
+    &--phone {
+      z-index: 50;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      bottom: auto;
+      left: auto;
+      transform: translateY(-50%);
+
+      & figure {
+        @extend %mobile-device;
+        width: 170px;
+        height: 351px;
+
+        & img {
+          @extend %mobile-img-placement;
+          width: 164px;
+          height: 292.5px;
+        }
+      }
+    }
+
+  }
+
+  &__app-screens {
+    position: relative;
+    width: 100%;
+    min-height: 316px;
+
+    &--1 {
+      z-index: 5;
+      position: absolute;
+      top: 50%;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      transform: translateY(-50%) scale(.9);
+
+      @include respond(tab-port) { transform: translateY(-50%) scale(1); }
+
+      & figure {
+        @extend %mobile-device;
+        width: 147px;
+        height: 303px;
+
+        & img {
+          @extend %mobile-img-placement;
+          width: 141.5px;
+          height: 252.5px;
+        }
+      }
+    }
+
+    &--2 {
+      z-index: 25;
+      position: absolute;
+      top: 50%;
+      right: auto;
+      bottom: auto;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(.95);
+
+      @include respond(tab-port) { transform: translate(-50%, -50%) scale(1); }
+
+      & figure {
+        @extend %mobile-device;
+        width: 147px;
+        height: 303px;
+
+        & img {
+          @extend %mobile-img-placement;
+          width: 141.5px;
+          height: 252.5px;
+        }
+      }
+    }
+
+    &--3 {
+      z-index: 50;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      bottom: auto;
+      left: auto;
+      transform: translateY(-50%);
+
+      & figure {
+        @extend %mobile-device;
+        width: 147px;
+        height: 303px;
+
+        & img {
+          @extend %mobile-img-placement;
+          width: 141.5px;
+          height: 252.5px;
+        }
+      }
+    }
+
+  }
+
+}
