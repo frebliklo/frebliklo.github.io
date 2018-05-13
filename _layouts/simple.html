@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="UX and product designer">
+
+    <!-- GA -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112773631-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112773631-1');
+    </script>
+
+
+    <!-- SEO -->
+    <meta name="title" content="Frederik Klovborg">
+    <meta name="description" content="Frederik is a Danish UX and product designer designing native apps and web applications">
+    <meta name="keywords" content="design, product design, ux design, user experience design, frebliklo, frederik klovborg, frederikklovborg, frederik blichert klovborg, frederik b klovborg, connected cars, prototyping, ux ui design, peytz">
+
+    <!-- STYLESHEETS -->
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans:100,300,400,500,600|Encode+Sans+Semi+Condensed:100,600" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/img/favicons/favicon-16x16.png">
+
+  </head>
+
+  <body>
+
+    <div role="main">
+      {{ content }}
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+
+</html>
