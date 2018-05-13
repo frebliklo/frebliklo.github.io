@@ -1,0 +1,67 @@
+.dribbble { color: $color-dribbble; }
+.github { color: $color-github; }
+.instagram { color: $color-instagram; }
+.linkedin { color: $color-linkedin; }
+
+.some {
+
+  &__link {
+    cursor: pointer;
+
+    &:hover, &:active, &:focus {
+
+      .some__icon {
+  
+        &--outer {
+          fill: currentColor;
+          transform: scale(1.1);
+          transition: all 220ms ease-out;
+        }
+  
+        &--inner {
+          opacity: 1;
+          transform: scale(1);
+          transition: all 220ms ease-out;
+        }
+  
+        &--icon {
+          fill: $color-white;
+          transition: all 220ms ease-out;
+        }
+  
+      }
+  
+    }
+  }
+
+  &__icon {
+    width: 5vw;
+    height: 5vw;
+    min-width: 6.4rem;
+    min-height: 6.4rem;
+
+    &--outer {
+      fill: $color-bg;
+      transform-origin: 50% 50%;
+      transition: all 180ms ease-in;
+    }
+
+    &--inner {
+      fill: currentColor;
+      opacity: 0;
+      transform: scale(.9);
+      transform-origin: 50% 50%;
+      transition: all 180ms ease-in;
+
+      &--instagram {
+        fill: url(#insta-gradient) !important;
+      }
+    }
+
+    &--icon {
+      fill: $color-bg;
+      transition: all 180ms ease-in;
+    }
+  }
+
+}
