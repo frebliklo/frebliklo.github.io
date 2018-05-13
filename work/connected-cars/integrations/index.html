@@ -22,11 +22,20 @@ title: Case study - CC integrations
         <h3>Inspiration &amp; Guidelines</h3>
         <p>We determined that there we wanted to begin with designing an isolated flow that could be served both from either our app or a third party vendor. The inspiration for this was rooted in OAuth solutions usually seen when signing up for new services with your Facebook or Google account.</p>
         <p>Regarding the design of OAuth, the critical factors are trust and recognisability. I find that it's vital to design with this in mind and communicate to the user both in writing and visually that they are in a familiar environment they can trust. To address this, I chose to base as much as possible on existing style and elements we share across brands.</p>
-        <figure>
+        <figure class="cc-case__secondary-screens u-mt u-mb-lg">
+          <div class="cc-case__secondary-screens--1">
+            <figure><img src="{{ site.baseurl }}/assets/img/integrations/last-trip@2x.png" alt="Trips screen from MinSEAT"></figure>
+          </div>
+          <div class="cc-case__secondary-screens--2">
+            <figure><img src="{{ site.baseurl }}/assets/img/integrations/menu@2x.png" alt="Menu from MinVolkswagen"></figure>
+          </div>
+          <div class="cc-case__secondary-screens--3">
+            <figure><img src="{{ site.baseurl }}/assets/img/integrations/warning-light@2x.png" alt="Warning light screen from MinSkoda"></figure>
+          </div>
           <figcaption>Secondary screens from MinSEAT, MinVolkswagen &amp; MinSkoda</figcaption>
         </figure>
         <p>Keeping GDPR in mind as well, I wanted to show users exactly data is shared with and relating it the features in our apps. To sum it up I ended with the following guidelines for the design:</p>
-        <ul>
+        <ul class="u-mb">
           <li>Reuse elements from apps to make it recognizable</li>
           <li>Create a comfortable overview of data being shared</li>
           <li>Group data by feature</li>
@@ -40,7 +49,32 @@ title: Case study - CC integrations
     <div class="row">
       <div class="col-2">
         <h3>Result</h3>
-        <div class="cc-case__consent-screens"></div>
+      </div>
+    </div>
+    <div class="cc-case__consent-screens u-mt u-mb-lg">
+      <div class="cc-case__consent-screens--1">
+        <figure>
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img src="{{ site.baseurl }}/assets/img/integrations/authorize@2x.png" alt="Consent screen">
+        </figure>
+      </div>
+      <div class="cc-case__consent-screens--2">
+        <figure>
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img src="{{ site.baseurl }}/assets/img/integrations/confirmation@2x.png" alt="Consent screen">
+        </figure>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
         <p>In isolation, the integration flow is a maximum of three steps; login, authorize, and confirmation. The focus was on simplicity and efficiently communicating to the user what is happening while offering some space to explain the next step to the user on the last step of the flow.</p>
         <p>Internally the reception was very positive as backend had been part of the process from the beginning while sales had something they could easily tailor to different partners and provide them with a clear path of what needs to happen to get an implementation up and running.</p>
         <p>In conclusion, the design is simple and in line with our visual language. It fulfills the goals of having a defined way for Connected Cars to handle integrations consistently while being flexible enough to meet the needs of our coming partners.</p>
