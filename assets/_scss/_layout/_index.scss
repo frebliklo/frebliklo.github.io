@@ -49,8 +49,11 @@
       margin-bottom: 2.4rem;
     }
 
-    &--teasers {
+    &--grid {
       width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+      grid-gap: 1.6rem;
     }
 
   }
