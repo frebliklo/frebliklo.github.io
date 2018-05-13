@@ -22,31 +22,49 @@
   }
 
   &__work {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
     &--title {
-      grid-column: 1 / span 1;
-      align-self: baseline;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
       margin-bottom: .8rem;
     }
 
     &--year {
-      grid-column: 2 / span 1;
-      justify-self: end;
-      align-self: baseline;
       opacity: .7;
       text-transform: uppercase;
+      text-align: right;
       font-size: 1.4rem;
     }
 
     &--desc {
-      grid-column: 1 / -1;
       margin-bottom: 1.6rem;
     }
 
     &--btn {
       font-weight: 500;
+      margin-bottom: 2.4rem;
+    }
+
+    &--teasers {
+      width: 100%;
+    }
+
+  }
+
+  &__divider {
+    width: 100%;
+    height: 1.6rem;
+
+    &--1 {
+      background: linear-gradient(to bottom, $color-green, $color-blue);
+    }
+
+    &--2 {
+      background: linear-gradient(to bottom, $color-blue, $color-green);
     }
 
   }
