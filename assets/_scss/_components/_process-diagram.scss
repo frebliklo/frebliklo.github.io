@@ -2,4 +2,135 @@
   width: 100%;
   background-color: $color-grey-light;
   padding: 4.8rem 0;
+
+  &__grid {
+    max-width: 60rem;
+    display: grid;
+    grid-template-columns: 1fr 12px 2px 12px 1fr;
+    justify-items: center;
+  }
+
+  &__start {
+    position: relative;
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+
+    @include respond(tab-port) { font-size: 2rem; }
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 0;
+      background-color: $color-blue;
+    }
+  }
+
+  &__end {
+    position: relative;
+    grid-column: 1 / -1;
+    grid-row: 13 / span 1;
+
+    @include respond(tab-port) { font-size: 2rem; }
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      top: -2px;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      background-color: $color-blue;
+    }
+  }
+
+  [class^='process-diagram__item-'] {
+    margin: .8rem 1.6rem;
+    padding: .8rem 1.2rem;
+    justify-self: start;
+    background-color: $color-bg;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba($color-black,.05), 0 2px 35px rgba($color-blue-dark-1,.05);
+
+    h6 {
+      font-size: 1.4rem;
+      font-weight: 400;
+
+      @include respond(tab-port) { font-size: 1.6rem; }
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        font-size: 1rem;
+        opacity: .8;
+
+        @include respond(tab-port) { font-size: 1.2rem; }
+      }
+    }
+
+  }
+
+  &__item-left {
+    grid-column: 1 / span 1;
+  }
+
+  &__item-right {
+    grid-column: 5 / span 1;
+  }
+
+  &__problem-statement {
+    grid-row: 3 / span 1;
+  }
+
+  &__research {
+    grid-row: 5 / span 1;
+  }
+
+  &__design {
+    grid-row: 7 / span 1;
+  }
+
+  &__testing {
+    grid-row: 9 / span 1;
+  }
+
+  &__production {
+    grid-row: 11 / span 1;
+  }
+
+  &__vertical-text {
+    writing-mode: vertical-lr;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: .6;
+    margin: .2rem;
+
+    &--real-world {
+      grid-column: 4 / span 1;
+      grid-row: 3 / span 2;
+    }
+
+    &--office {
+      grid-column: 2 / span 1;
+      grid-row: 8 / span 2;
+    }
+  }
+
+  &__vertical {
+    grid-column: 3 / span 1;
+    grid-row: 2 / 12;
+    background-color: $color-blue;
+    opacity: .3;
+    width: 2px;
+  }
 }
