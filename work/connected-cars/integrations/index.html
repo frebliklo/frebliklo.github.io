@@ -1,0 +1,53 @@
+---
+layout: default
+title: Case study - CC integrations
+---
+
+<div class="cc-case">
+
+  <header class="container">
+    <div class="row">
+      <div class="col-2">
+        <h2 class="u-mb-sm">Integration pattern</h2>
+        <p>At the beginning of 2018, Connected Cars had gotten off the ground. With almost 50000 cars on the platform and 80000 users and the core functionalities in place, we were looking to establishing ourselves as the platform for a better and smarter car owner experience.</p>
+        <p>To make this a reality we had created a strategy to offer meaningful integrations with existing products to empower our users by providing a connection between the data coming from their car with third parties focusing on driver's logs, fuel economy, parking and so forth.</p>
+        <p>I was tasked to design how this should be solved and get back to our VP of Data Solutions with a pitch that he could present to potential partners. To begin the process I started to discuss what integrations should look like with the backend engineer responsible for creating an API for our partners.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-2">
+        <h3>Inspiration &amp; Guidelines</h3>
+        <p>We determined that there we wanted to begin with designing an isolated flow that could be served both from either our app or a third party vendor. The inspiration for this was rooted in OAuth solutions usually seen when signing up for new services with your Facebook or Google account.</p>
+        <p>Regarding the design of OAuth, the critical factors are trust and recognisability. I find that it's vital to design with this in mind and communicate to the user both in writing and visually that they are in a familiar environment they can trust. To address this, I chose to base as much as possible on existing style and elements we share across brands.</p>
+        <figure>
+          <figcaption>Secondary screens from MinSEAT, MinVolkswagen &amp; MinSkoda</figcaption>
+        </figure>
+        <p>Keeping GDPR in mind as well, I wanted to show users exactly data is shared with and relating it the features in our apps. To sum it up I ended with the following guidelines for the design:</p>
+        <ul>
+          <li>Reuse elements from apps to make it recognizable</li>
+          <li>Create a comfortable overview of data being shared</li>
+          <li>Group data by feature</li>
+        </ul>
+        <p>The result was a straightforward design that fits into our apps secondary screens that share the same style across all brands.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-2">
+        <h3>Result</h3>
+        <div class="cc-case__consent-screens"></div>
+        <p>In isolation, the integration flow is a maximum of three steps; login, authorize, and confirmation. The focus was on simplicity and efficiently communicating to the user what is happening while offering some space to explain the next step to the user on the last step of the flow.</p>
+        <p>Internally the reception was very positive as backend had been part of the process from the beginning while sales had something they could easily tailor to different partners and provide them with a clear path of what needs to happen to get an implementation up and running.</p>
+        <p>In conclusion, the design is simple and in line with our visual language. It fulfills the goals of having a defined way for Connected Cars to handle integrations consistently while being flexible enough to meet the needs of our coming partners.</p>
+        <p class="u-mt"><span>Bonus:</span> When working on this design I played a little with SVG animation in Framer and posted it to <a class="inline-link" href="https://dribbble.com/shots/4357814-Data-sharing-consent" target="_blank">Dribbble.</a> The <a class="inline-link" href="https://framer.cloud/GDvyS/" target="_blank">Framer prototype is also online</a> if you want to play around with it.</p>
+      </div>
+    </div>
+    <a href="{{ site.baseurl }}/work/connected-cars" class="btn u-mt u-mb-xxl">&larr; Back to Connected Cars</a>
+  </section>
+
+</div>

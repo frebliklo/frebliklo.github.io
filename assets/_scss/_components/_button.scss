@@ -29,7 +29,7 @@
 
   &, &:link, &:visited {
     position: relative;
-    color: currentColor;
+    color: $color-blue-dark-1;
     z-index: 100;
     transition: color 100ms;
   }
@@ -40,6 +40,7 @@
     width: 105%;
     height: 2px;
     background: linear-gradient(to bottom, $color-blue-dark-1, $color-blue-dark-2);
+    border-radius: 1px;
     top: auto;
     right: auto;
     bottom: 0;
