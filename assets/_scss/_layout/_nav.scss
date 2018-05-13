@@ -1,5 +1,5 @@
 .nav {
-  z-index: 2000;
+  z-index: 10000;
   position: fixed;
   top: 0;
   display: flex;
@@ -23,7 +23,7 @@
       border-radius: 2px;
       background-color: transparent;
       cursor: pointer;
-      transition: color 160ms ease-in, background-color 160ms ease-in;
+      transition: color 160ms ease-in, background-color 160ms ease-in, opacity 160ms ease-in-out;
     }
 
     &:hover, &:active, &:focus {

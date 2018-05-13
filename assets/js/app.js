@@ -7,5 +7,6 @@ function changeMenu() {
     document.querySelector('.nav').classList.remove('scrolled')
   } else {
     document.querySelector('.nav').classList.add('scrolled')
+    document.querySelector('.nav__hero').classList.remove('hidden')
   }
 }
