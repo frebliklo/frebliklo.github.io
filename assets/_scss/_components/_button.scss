@@ -2,38 +2,24 @@
   
   &, &:link, &:visited {
     display: inline-block;
-    color: $color-black;
+    color: $color-fg;
+    background-color: $color-white;
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 600;
-    border-bottom: 1px solid $color-black;
-    padding: 4px;
-    transition: all .3s;
-
-    @include respond(tab-land) {
-      background-color: $color-white;
-      border-bottom: 1px solid rgba($color-white,0);
-      padding: 4px 12px;
-      box-shadow: 1px 3px 5px rgba($color-black,.2);
-      transform: translateY(-2px);
-    }
-
+    padding: .8rem 1.6rem;
+    border-radius: 4px;
+    box-shadow: 1px 3px 8px rgba($color-black,.1);
+    transition: box-shadow 180ms;
+    cursor: pointer;
   }
 
   &:hover {
-    background-color: $color-white;
-    border-bottom: 1px solid rgba($color-white,0);
-    padding: 4px 12px;
-    box-shadow: 1px 3px 5px rgba($color-black,.2);
-    transform: translateY(-2px);
+    box-shadow: 1px 3px 8px rgba($color-black,.2), 0 5px 25px rgba($color-blue,.15), inset 0 5px 5px rgba($color-grey-light,.25);
   }
 
   &:active, &:focus {
-    background-color: $color-white;
-    border-bottom: 1px solid rgba($color-white,0);
-    padding: 4px 12px;
-    box-shadow: .5px 2px 5px rgba($color-black,.2);
-    transform: translateY(-1px);
+    box-shadow: 1px 3px 8px rgba($color-black,.15), 0 5px 25px rgba($color-blue,.05), inset 0 5px 5px rgba($color-grey-light,.02);
   }
 
 }
