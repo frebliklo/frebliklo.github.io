@@ -6,10 +6,10 @@
 
 html {
   // rem definition, so should stay in base as we use this for both spacing and typography
-  font-size: 62.5%;
+  font-size: 56.25%;
 
-  @include respond(tab-land) {
-    font-size: 56.25%;
+  @include respond(tab-port) {
+    font-size: 62.5%;
   }
   
 }
