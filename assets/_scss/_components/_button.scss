@@ -23,3 +23,40 @@
   }
 
 }
+
+.inline-link {
+  display: inline-block;
+
+  &, &:link, &:visited {
+    position: relative;
+    color: currentColor;
+    z-index: 100;
+    transition: color 100ms;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 105%;
+    height: 2px;
+    background: linear-gradient(to bottom, $color-blue-dark-1, $color-blue-dark-2);
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -50;
+    transition: height 100ms;
+  }
+
+  &:hover, &:focus, &:active {
+    color: $color-bg;
+    transition: color 120ms;
+
+    &::before {
+      height: 100%;
+      transition: height 120ms;
+    }
+  }
+
+}
