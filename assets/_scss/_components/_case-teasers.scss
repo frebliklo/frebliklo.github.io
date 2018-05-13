@@ -1,7 +1,6 @@
 .case-teasers {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-  grid-gap: .8rem;
+  display: flex;
+  flex-direction: column;
 
   &__heading {
     font-size: 2rem;
@@ -11,21 +10,32 @@
   }
 
   &__container {
+    display: grid;
+    grid-template-columns: minmax(24rem, 1fr) 2.4rem;
+    // grid-gap: .8rem;
+    justify-items: start;
     padding: 1.2rem 1.6rem;
-    background-color: transparent;
-    box-shadow: 0 2px 0 rgba($color-black,0);
+    background-color: $color-white;
+    box-shadow: 0 5px 15px rgba($color-black,.05), 0 2px 35px rgba($color-blue-dark-1,.05);
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 180ms ease-in, box-shadow 200ms ease-out;
-  
-    &:hover,&:active,&:focus {
-      background-color: $color-white;
-      box-shadow: 1px 5px 15px rgba($color-black,.2);
-      transition: background-color 200ms ease-out, box-shadow 250ms ease-out;
+
+    @include respond(tab-land) {
+      background-color: transparent;
+      box-shadow: 0 2px 0 rgba($color-black,0), 0 0 5px rgba($color-blue-dark-1,.0);
+
+      &:hover,&:active,&:focus {
+        background-color: $color-white;
+        box-shadow: 1px 5px 15px rgba($color-black,.2), 0 0 5px rgba($color-blue-dark-1,.15);
+        transition: background-color 200ms ease-out, box-shadow 250ms ease-out;
+      }
     }
+  
   }
 
   &__title {
+    grid-column: 1 / span 1;
     position: relative;
     display: inline-block;
     margin-bottom: .4rem;
@@ -45,7 +55,18 @@
   }
 
   &__desc {
+    grid-column: 1 / span 1;
     font-size: 1.4rem;
     margin-bottom: 1.2rem;
+    hyphens: auto;
+  }
+
+  &__chevron {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    align-self: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    opacity: .4;
   }
 }
