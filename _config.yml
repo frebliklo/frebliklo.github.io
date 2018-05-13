@@ -20,3 +20,6 @@ github_username:  frebliklo
 
 # Build settings
 markdown: kramdown
+
+plugins:
+- jekyll-autoprefixer
