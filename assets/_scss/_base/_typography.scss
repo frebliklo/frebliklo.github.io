@@ -1,5 +1,5 @@
 body {
-  font-family: 'Encode Sans', Helvetica, sans-serif;
+  font-family: $default-font;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -7,61 +7,38 @@ body {
   background: $color-bg;
 }
 
-// .heading-primary {
+h1, h2 {
+  font-family: $heading-font;
+  font-weight: 600;
+}
 
-//   &__main {
-//     display: block;
-//     font-size: 4.8rem;
-//     // font-size: 3.6vw;
-//     // animation: move-in-left .75s ease-in-out;
+h1 {
+  font-size: 4.8rem;
+}
 
-//     @include respond(tab-land) {
-//       font-size: 4.8rem;
-//       // font-size: 4.2vw;
-//     }
+h2 {
+  font-size: 3.2rem;
+}
 
-//     @include respond(tab-port) {
-//       font-size: 3.2rem;
-//     }
+h3, h4 {
+  font-family: $default-font;
+  font-weight: 600;
+}
 
-//   }
+h3 {
+  font-size: 2.4rem;
+}
 
-//   &__sub {
-//     display: block;
-//     font-size: 3.2rem;
-//     // font-size: 2.6vw;
-//     // opacity: 0;
-//     // animation: move-in-left .5s ease-in-out .75s forwards;
+h4 {
+  font-size: 1.6rem;
+}
 
-//     @include respond(tab-land) {
-//       font-size: 3.2rem;
-//       // font-size: 2.8vw;
-//     }
+p {
+  margin-bottom: 2.4rem;
+}
 
-//     @include respond(tab-port) {
-//       font-size: 2.4rem;
-//     }
-
-//   }
-
-// }
-
-// .heading-secondary {
-//   display: block;
-//   font-size: 3.2rem;
-// }
-
-// .paragraph {
-//   font-size: 1.6rem;
-
-//   // -moz-hyphens: auto;
-//   // -ms-hyphens: auto;
-//   // -webkit-hyphens: auto;
-//   // hyphens: auto;
-// }
-
-// .contact-info {
-//   display: block;
-//   font-size: 1.4rem;
-//   color: rgba($color-black,.6);
-// }
+a, li {
+  font-size: inherit;
+  text-decoration: none;
+  color: currentColor;
+}

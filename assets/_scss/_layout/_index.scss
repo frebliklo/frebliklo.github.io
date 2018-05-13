@@ -1,56 +1,54 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  min-height: 90vh;
+.index {
 
-  @include respond(phone) {
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 9.6rem;
+  h2 {
+    font-weight: 100;
   }
 
-  @include respond(phone) {
-    padding-top: 2.4rem;
+  &__title {
+    margin-bottom: 2.4rem;
+
+    &--sub {
+      display: block;
+      font-family: $default-font;
+      font-size: 2.4rem;
+      font-weight: 200;
+    }
   }
 
-  &__content {
-    max-width: 30%;
+  &__some {
+    padding: 8rem 0;
+    background: linear-gradient($color-blue, $color-green);
+    color: $color-bg;
+  }
 
-    @include respond(tab-land) {
-      max-width: 40%;
+  &__work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &--title {
+      grid-column: 1 / span 1;
+      align-self: baseline;
+      margin-bottom: .8rem;
     }
 
-    @include respond(tab-port) {
-      max-width: 75%;
+    &--year {
+      grid-column: 2 / span 1;
+      justify-self: end;
+      align-self: baseline;
+      opacity: .7;
+      text-transform: uppercase;
+      font-size: 1.4rem;
     }
 
-    @include respond(phone) {
-      max-width: 90%;
+    &--desc {
+      grid-column: 1 / -1;
+      margin-bottom: 1.6rem;
     }
 
-  }
+    &--btn {
+      font-weight: 500;
+    }
 
-  &__heading {
-    
-  }
-
-  &__body {
-    
-  }
-
-  &__button {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__social {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 0 3.2rem;
   }
 
 }

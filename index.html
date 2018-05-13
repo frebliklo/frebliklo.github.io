@@ -2,31 +2,48 @@
 layout: default
 title: Frederik B Klovborg
 ---
+<div class="index">
 
-<div class="main">
-
-  <div class="main__content">
-
-    <div class="main__heading u-margin-bottom-lg">
-      <h1 class="heading-primary">
-        <span class="heading-primary__main">Hello, I'm Frederik</span>
-        <span class="heading-primary__sub">UX and product designer</span>
-      </h1>
-    </div>
-
-    <div class="main__body u-margin-bottom-lg">
-      <p class="paragraph u-margin-bottom">I solve problems through design, research, and code. Currently focusing on making car ownership a better experience through
-      connectivity and data. I'm passionate about motion in user interfaces, prototyping tools and learning new skills.</p>
-      <p class="paragraph u-margin-bottom">I'm working on my portfolio at the moment, but in the meantime, you can check out some of my work on Connected Cars.</p>
-      <div class="main__button">
-        <a href="https://connectedcars.io" target="_blank" class="btn">Check it out &rarr;</a>
+  <section class="container">
+    <div class="row">
+      <div class="col-2">
+        <h1 class="index__title">frebliklo<span class="index__title--sub">UX, design &amp; code</span></h1>
+        <p>My name is Frederik. I’m a designer from Copenhagen, who solves problems by creating products for web and mobile. Currently working on the future of connected cars and utilizing data from vehicles.</p>
+        <p>I’m passionate about empowering users through technology, building delightful experiences and prototyping interaction design.</p>
       </div>
     </div>
-
-    <div class="main__social u-margin-bottom-xl">
-      {% include social-links.html %}
+  </section>
+  
+  <div class="container index__some">
+    <div class="row u-space-between">
+      {% include some.html %}
     </div>
-
   </div>
+
+  <section class="container">
+    <div class="row u-mb">
+      <h2>Work</h2>
+    </div>
+    <div class="row u-mb-lg">
+      <div class="col-2">
+        <div class="index__work">
+          <h3 class="index__work--title">Connected Cars</h3>
+          <h5 class="index__work--year">current</h5>
+          <p class="index__work--desc">Designing mobile and web apps to enrich both car owners and their workshops with data from the car. Joined as the first designer and currently leading the design of the car owner experience.</p>
+          <a href="{{ site.baseurl }}/work/connected-cars" class="index__work--btn">Read more &rarr;</a>
+        </div>
+      </div>
+    </div>
+    <div class="row u-mb-xxl">
+        <div class="col-2">
+          <div class="index__work">
+            <h3 class="index__work--title">Peytz &amp; Co</h3>
+            <h5 class="index__work--year">2016</h5>
+            <p class="index__work--desc">Worked with multiple clients building web apps mainly focusing on public projects, among others for The City of Copenhagen and  Danish Film Institute. I planned and conducted usability tests and adviced clients on how to analyze and act on user research and best practices in web design to improve the user experience.</p>
+            <a href="{{ site.baseurl }}/work/peytz" class="index__work--btn">Read more &rarr;</a>
+          </div>
+        </div>
+      </div>
+  </section>
 
 </div>
