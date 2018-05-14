@@ -1,17 +1,22 @@
+%btn-shared {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: .8rem 1.6rem;
+  border-radius: 4px;
+  box-shadow: 1px 3px 8px rgba($color-black,.1);
+  transition: box-shadow 180ms;
+  cursor: pointer;
+}
+
 .btn {
   
   &, &:link, &:visited {
-    display: inline-block;
+    @extend %btn-shared;
+
     color: $color-fg;
     background-color: $color-white;
-    text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: 600;
-    padding: .8rem 1.6rem;
-    border-radius: 4px;
-    box-shadow: 1px 3px 8px rgba($color-black,.1);
-    transition: box-shadow 180ms;
-    cursor: pointer;
   }
 
   &:hover {
@@ -20,6 +25,36 @@
 
   &:active, &:focus {
     box-shadow: 1px 3px 8px rgba($color-black,.15), 0 5px 25px rgba($color-blue,.05), inset 0 5px 5px rgba($color-grey-light,.02);
+  }
+
+}
+
+.btn__cta {
+
+  &, &:link, &:visited {
+    @extend %btn-shared;
+
+    color: $color-white;
+    background: linear-gradient(to bottom, $color-blue-dark-1 0%, $color-blue-dark-2 150%);
+    // background-color: $color-blue-dark-1;
+  }
+
+  &:hover {
+    box-shadow: 1px 3px 8px rgba($color-blue-dark-2,.4), 0 5px 25px rgba($color-blue,.35), inset 0 5px 5px rgba($color-grey-light,.2);
+  }
+
+  &:active, &:focus {
+    box-shadow: 1px 3px 8px rgba($color-blue-dark-2,.25), 0 5px 25px rgba($color-blue,.25), inset 0 5px 5px rgba($color-grey-light,.02);
+  }
+
+  &--flex {
+    display: flex !important;
+
+    & svg {
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: 1.2rem;
+    }
   }
 
 }
