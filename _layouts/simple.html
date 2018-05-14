@@ -38,9 +38,11 @@
 
   <body>
 
-    <div role="main">
+    <main role="main">
       {{ content }}
-    </div>
+    </main>
+
+    {% if page.page_class contains "index" %}{% include footer.html %}{% endif %}
 
   </body>
 
