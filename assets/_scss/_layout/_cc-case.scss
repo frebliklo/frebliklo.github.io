@@ -116,57 +116,65 @@
       justify-items: center;
     }
 
+    [class^='cc-case__consent-screens--'] {
+
+      & figure {
+        @extend %browser-device;
+        width: 300px;
+        height: 305px;
+
+        @include respond(tab-land) {
+          width: 374px;
+          height: 380px;
+        }
+
+        & img {
+          @extend %browser-img-placement;
+          width: 295.5px;
+          height: 295.5px;
+
+          @include respond(tab-land) {
+            width: 368.5px;
+            height: 368.5px;
+          }
+        }
+
+        & div {
+          position: absolute;
+          top: 0.75%;
+          right: auto;
+          bottom: auto;
+          left: 0.75%;
+
+          display: flex;
+
+          & span {
+            width: 2.5px;
+            height: 2.5px;
+            border-radius: 50%;
+            margin-right: 1.5px;
+
+            &:nth-of-type(1) {
+              background: $color-device-red;
+            }
+
+            &:nth-of-type(2) {
+              background: $color-device-yellow;
+            }
+
+            &:nth-of-type(3) {
+              background: $color-device-green;
+            }
+          }
+        }
+      }
+
+    }
+
     &--1 {
       margin-bottom: 1.6rem;
-
-      & figure {
-        @extend %browser-device;
-        width: 300px;
-        height: 305px;
-
-        @include respond(tab-land) {
-          width: 374px;
-          height: 380px;
-        }
-
-        & img {
-          @extend %browser-img-placement;
-          width: 295.5px;
-          height: 295.5px;
-
-          @include respond(tab-land) {
-            width: 368.5px;
-            height: 368.5px;
-          }
-        }
-      }
     }
-
-    &--2 {
-
-
-      & figure {
-        @extend %browser-device;
-        width: 300px;
-        height: 305px;
-
-        @include respond(tab-land) {
-          width: 374px;
-          height: 380px;
-        }
-
-        & img {
-          @extend %browser-img-placement;
-          width: 295.5px;
-          height: 295.5px;
-
-          @include respond(tab-land) {
-            width: 368.5px;
-            height: 368.5px;
-          }
-        }
-      }
-    }
+  
   }
 
 }
