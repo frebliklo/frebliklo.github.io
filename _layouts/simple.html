@@ -38,6 +38,8 @@
 
   <body>
 
+    {% if page.page_class != "index" %}{% include navigation.html %}{% endif %}
+
     <main role="main">
       {{ content }}
     </main>
