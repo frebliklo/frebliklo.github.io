@@ -1,7 +1,7 @@
 ---
 layout: simple
 title: Frederik Klovborg - UX, design and code
-page_class: index
+page_class: default
 ---
 <div class="index u-mt-xxl">
 
@@ -45,7 +45,7 @@ page_class: index
         </div>
       </div>
     </div>
-    <div class="row u-mb-xxl">
+    <div class="row u-mb-xl">
         <div class="col-2">
           <div class="index__work">
             <div class="index__work--title">
@@ -59,25 +59,20 @@ page_class: index
       </div>
   </section>
 
-  <div class="container index__divider index__divider--1 u-mb-xl"></div>
-
-  <section class="container">
+  <section class="container index__about--bg">
     <div class="row">
       <div class="col-2">
-        <h2 class="u-mb-xs">Process</h2>
-        <p>I like to collaborate and iterate on design problems. No two projects are alike, but on an overall level, my process is to gather enough knowledge to understand the problem at hand so that design and technology decision meet the user's needs and result in a delightful solution.</p>
-      </div>
-    </div>
-    {% include process-diagram.html %}
-    <div class="row u-mt">
-      <div class="col-2">
-        <p>I like to think of the process being split into activities in the office and real world. I find that this is a great model to both give room for innovation and creativity while guiding the entire process by what's needed for both business and the users.</p>
-        <p>It isn't a strictly linear process, but steps on the way from problem to product where you always can revisit the previous activities based on iterations and discussions with my team. Collaboration, knowledge, and experience are the keys to success and the path I choose to take.</p>
+        <div class="index__about">
+          <div class="index__about--content">
+            <h2 class="u-mb-xs">About</h2>
+            <p>I’m happy when I’m building things and working together with awesome people. I like to learn and collaborate. If I can bring out the best in my colleagues, then they can bring out the best in me. I love nerdy discussions about design tools, front-end code or 70’s music.</p>
+            <a href="{{ site.baseurl }}/work/about" class="index__about--btn btn">Read more &rarr;</a>
+          </div>
+          <div class="index__about--img">{% include me-card.html %}</div>
+        </div>
       </div>
     </div>
   </section>
-
-  <div class="container index__divider index__divider--2 u-mb-xl"></div>
 
   <section class="container">
     <div class="row u-mb-xxl">

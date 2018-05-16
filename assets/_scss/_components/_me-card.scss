@@ -1,0 +1,36 @@
+.me-card {
+  width: 100%;
+  max-width: 32rem;
+  min-width: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: $color-fg;
+  background-color: $color-bg;
+  box-shadow: 0 15px 35px rgba($color-black,.15), 0 0 15px rgba($color-black,.15);
+  border-radius: 4px;
+  overflow: hidden;
+
+  &__photo {
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: .4rem;
+  }
+
+  &__item {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+
+    &:last-child {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+}
