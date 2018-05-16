@@ -1,5 +1,15 @@
 .about {
 
+  &__me {
+    width: 24rem;
+    margin: 0 auto 2.4rem auto;
+
+    @include respond(tab-port) { 
+      float: right;
+      margin: 0 0 2.4rem 1.6rem;
+    };
+  }
+
   &__centered-txt {
     font-size: 1.4rem;
     font-weight: 200;
