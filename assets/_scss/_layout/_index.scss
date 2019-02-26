@@ -96,4 +96,31 @@
 
   }
 
+  &__contact-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2.4rem;
+
+    h3 {
+      font-size: 1.6rem;
+    }
+
+    svg {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-right: 1.2rem;
+      opacity: .85;
+
+      path {
+        fill: currentColor;
+      }
+
+    }
+  }
+
+  &__phone-prefix {
+    opacity: .8;
+  }
+
 }
